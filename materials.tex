@@ -1,0 +1,206 @@
+\documentclass[12pt,a4paper]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{leftidx}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\begin{document}
+
+\section*{Материалы к экзамену}
+
+\subsection*{Именные теоремы}
+
+\textbf{Бэр (о полном метрическом пространстве)}: Полное метрическое пространство не может быть представлено в виде счетного объединения своих нигде не плотных множеств. \\
+
+\textbf{Хаусдорф (о пополнении)}: Для любого неполного метрического пространства существует его пополнение. \\
+ 
+\textbf{Александер (о предбазе)}: \\
+
+\textbf{Тихонов (о компактности декартова произведения компактных ТП)}: \\
+
+\textbf{Критерий Фреше (топологическая компактность в МП)}: $(X, \rho)$ — МП, подмножество $S \subset X.$ Следующие 3 свойства эквивалентны: \\
+1) $S$ — компактное множество;
+2) $S$ — вполне ограниченное множество и $(S, \rho)$ — полное метрическое пространство;
+3) $S$ — секвенциально компактное множество.\\
+
+\textbf{Арцела, Асколи}: $(K, \rho)$ — компактное МП, $C(K)$ — пространство непрерывных на компакте $K$ функций, $S \subset C(K).$ Множество $S$ является вполне ограниченным множеством тогда и только тогда, когда: \\
+1) $S$ — ограниченное множество;\\
+2) $S$ — равностепенно непрерывное множество.\\
+
+\textbf{Рисс, Колмогоров}: \\
+
+\textbf{Рисс (лемма о почти перпендикуляре)}: $(X, \Vert \cdot \Vert_X)$ — ЛНП, $L \subset X$ — собственное замкнутое подпространство. Тогда 
+$$\forall \varepsilon in (0, 1) \ \ \exists z_{\varepsilon}: \Vert z_{\varepsilon}\Vert_X = 1, \rho(z_{\varepsilon}, L) > 1 - \varepsilon.$$\\
+
+\textbf{Рисc (о некомпактности сферы)}: В бесконечномерном ЛНП единичная сфера не является компактным множеством. [простое следствие леммы о почти перпендикуляре]\\
+
+\textbf{Банах (об открытом отображении)}: $(X, \Vert \cdot \Vert_X), (Y, \Vert \cdot \Vert_Y)$ — банаховы пространства, $A \in L(X, Y)$ — сюръективный оператор. Тогда $A$ является открытым отображением. \\
+
+\textbf{Банах (об обратном операторе)}: $(X, \Vert \cdot \Vert_X), (Y, \Vert \cdot \Vert_Y)$ — банаховы пространства, $A \in L(X, Y).$ Оператор $A$ непрерывно обратим $A^{-1} \in L(Y, X)$ тогда и только тогда, когда $\begin{cases} Ker A = \{0\} \\ Im A = Y\end{cases}.$\\
+
+\textbf{Хан, Банах} (реально это частный случай более общего утверждения): $(X, \Vert \cdot \Vert_X)$ — комплексное ЛНП, $L \subset X$ — подпространство, $f: L \rightarrow \mathbb{C}$ — линейный непрерывный функционал на $L.$ Тогда существует линейный непрерывный функционал $g: X \rightarrow \mathbb{C}$ на $X$ такой, что: \\
+1) $f\Bigm|_{L} = g\Bigm|_{L};$\\
+2) $\Vert f\Vert = \Vert g\Vert.$\\
+\textbf{4 следствия теоремы Хана-Банаха}: \\
+
+\textbf{Рисс (о проекции)}: $H$ — ГП, $S \subset H$ — выпуклое замкнутое множество. Тогда для любого элемента ГП существует и единствена метрическая проекция этого элемента на множество $S:$
+$$\forall x \in H \ \ \exists ! y \in S: \rho(x, S) = \Vert x - y\Vert.$$
+
+\textbf{Рисс (об ортогональном дополнении)}: $H$ — ГП, $L \subset H$ — замкнутое подпространство. Тогда 
+$$H = L \oplus L^{\bot}.$$\\ 
+
+\textbf{Рисс, Фреше}: $H$ — ГП, $f \in H^*$ — линейный непрервный функционал на $H.$ Тогда существует и единственен $z_f \in H$ такой, что: \\
+1) $\forall x \in H: f(x) = (x, z_f);$\\
+2) $\Vert f\Vert = \Vert z_f\Vert_H.$\\
+Отображение $z: H^* \rightarrow H$ является взаимооднозначным, изометричным и сопряженно-линейным.\\
+Следствием этой теоремы является \textbf{рефлексивность произвольного ГП}.\\
+
+\textbf{Шур} В пространстве $(l_1, \Vert \cdot \Vert_1)$ всякая слабо сходящаяся последовательность сходится сильно.\\
+
+\textbf{Мазур}: $(X, \Vert \cdot \Vert)$ — ЛНП. Пусть $A \subset X$ — выпуклое множество. Тогда мн-во $A$ слабо замкнуто тогда и только тогда, когда оно сильно замкнуто. \\
+
+\textbf{Банах, Алаоглу}: $(X, \Vert \cdot \Vert)$ — ЛНП. Пусть $(X, \Vert \cdot \Vert)$ является сепарабельным пространством. Тогда любой замкнутый шар в сопряженном пространстве $\forall R > 0 \ \ B_R^{*}(0) \subset X^{*}$ является слабо* компакнтым. \\
+
+\textbf{Банах, Тихонов}: (является следствием теоремы Банаха, Алаоглу) $(X, \Vert \cdot \Vert)$ — ЛНП. Пусть $(X, \Vert \cdot \Vert)$ является сепарабельным и рефлексивным пространством. Тогда любая ограниченная последовательность в пространстве $(X, \Vert \cdot \Vert)$ содержит слабо сходящуюся подпоследовательность. \\
+
+\textbf{Банах, Штейнгауз}: $(X, \Vert \cdot \Vert_X), (Y, \Vert \cdot \Vert_Y)$ — ЛНП, причем $(X, \Vert \cdot \Vert_X)$ банахово пространство. Пусть последовательность линейных непрерывных операторов $\left\{A_n\right\}_{n \in \mathbb{N}} \subset L(X, Y)$ является поточечно ограниченной: $\forall x \in X \sup\limits_{n \in \mathbb{N}}\Vert A_nx\Vert_Y < +\infty.$ Тогда она является ограниченной в пространстве $L(X, Y):\sup\limits_{n \in \mathbb{N}}\Vert A_n\Vert < \infty.$\\
+Следствием этой теоремы служит ограниченность слабо и слабо* сходящихся последовательностей.\\
+
+\textbf{Фредгольм}: $(X, \Vert \cdot \Vert_X), (Y, \Vert \cdot \Vert_Y)$ — ЛНП, $A \in L(X, Y).$ Тогда
+$$Ker A =  ^{\perp}(Im A^{*}), Ker A^{*} = (Im A)^{\bot}.$$
+\textbf{Следствие}: $(X, \Vert \cdot \Vert_X), (Y, \Vert \cdot \Vert_Y)$ — ЛНП, $A \in L(X, Y).$ Тогда 
+$$(Ker A)^{\bot} =  (^{\perp}(Im A^{*}))^{\bot} \supset [Im A^{*}], ^{\perp}(Ker A^{*}) = ^{\perp}((Im A)^{\bot}) = [Im A].$$
+Если $X$ — рефлексивно, то 
+$$(Ker A)^{\bot} =  (^{\perp}(Im A^{*}))^{\bot} = [Im A^{*}].$$
+
+\textbf{Гельфанд, Мазур}: $A$ — банахова алгебра, в которой каждый ненулевой элемент обратим. Тогда $A$ изометрически изоморфна полю комплексных чисел. \\
+
+\textbf{Хелингер, Теплиц}: $H$ — ГП, $A$ — линейный симметричный оператор на всем $H.$ Тогда $A$ является непрерывным, а следовательно самосопряженным оператором. \\
+
+\textbf{Гильберт, Шмидт}: \\
+
+\textbf{Спектральная теорема}: \\
+
+\newpage
+\subsection*{Основные определения}
+
+\subsubsection*{Топологическое пространство}
+
+\subsubsection*{Метрическое пространство}
+
+\subsubsection*{Нормированное пространство}
+
+\subsubsection*{Гильбертово пространство}
+
+\subsubsection*{Компактность}
+
+\subsubsection*{Виды операторов}
+
+\textbf{Ограниченный оператор}: \\
+
+\textbf{Норма оператора}:\\
+
+\textbf{Ограниченный снизу оператор}: \\
+
+\textbf{Обратный оператор}: \\
+
+\textbf{Компактный оператор}: \\
+
+\textbf{Сопряженный оператор}: \\ 
+
+\textbf{Нормальный оператор}: \\ 
+
+\textbf{Унитарный оператор}: \\ 
+
+\textbf{Оператор проекции}: \\ 
+
+\textbf{Симметричный оператор}: \\ 
+
+\textbf{Самосопряженный оператор}: \\
+
+\textbf{Неотрицательный оператор}: \\ 
+
+\subsubsection*{Спектр}
+
+\textbf{Спектр}: \\ 
+
+\textbf{Резольвентное множество}: \\ 
+
+\textbf{Резольвента}: \\ 
+
+\textbf{Спектральный радиус}: \\ 
+
+\textbf{Точечный спектр оператора}: \\ 
+
+\textbf{Непрерывный спектр оператора}: \\ 
+
+\textbf{Остаточный спектр оператора}: \\ 
+
+\newpage
+\subsection*{Важные теоремы}
+
+\textbf{Критерий базы ТП} $X$ — множество. Семейство $\beta$ подмножеств множества $X$ является базой некоторой топологии $\tau$ в $X$ тогда и только тогда, когда: \\
+1) $\forall x \in X: \exists V \in \beta: x \in V, \text{ то есть }X = \bigcup\limits_{V \in \beta} V;$\\
+2) $\forall V_1, V_2 \in \beta \ \ \forall x \in V_1 \cap V_2 \ \ \exists W \in \beta: x \in W \subset V_1 \cap V_2.$\\
+
+\textbf{Критерий несепарабельности МП} Метрическое пространство является несепарабельным тогда и только тогда, когда в нем существует более чем счетное $\varepsilon_0 > 0$ - дырявое множество. \\
+
+\textbf{Принцип вложенных шаров} Метрическое пространство является полным тогда и только тогда, когда произвольная последовательность замкнутых вложенных шаров, чьи радиусы стремятся к нулю, имеет непустое пересечение. \\
+\textbf{Контрпример}. Полное МП и последовательность замкнутых вложенных шаров, радиусы которых не стремятся к нулю, имеет пустое пересечение. \\
+
+\textbf{Теорема о полноте пространства операторов} $(X, \Vert \cdot \Vert_X), (Y, \Vert \cdot \Vert_Y)$ — ЛНП, причем $(Y, \Vert \cdot \Vert_X)$ банахово пространство. Тогда $(L(X, Y), \Vert \cdot\Vert_A)$ является банаховым пространством. \\
+Тривиальным следствием этого факта является банаховость произвольного сопряженного пространства, так как $X^* = L(X, \mathbb{C}).$\\
+
+\newpage
+\subsection*{Схема определения частей спектра линейного непрерывного оператора}
+
+\tikzstyle{decision} = [rectangle, draw, fill=green!20,  text width=12em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, rectangle,fill=red!20,  text centered, text width=12em, node distance=3cm,
+    minimum height=3em]
+
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    \node [block] (complex) {$\lambda \in \mathbb{C}$};
+    \node [cloud, below left of=complex, node distance=5cm] (resolvent) {$Ker A_\lambda = \{0\}, Im A_\lambda = X$};
+    \node [cloud, below right of=complex, node distance=5cm] (spectrum) {$Ker A_\lambda \neq \{0\}$ или $Im A_\lambda \neq X$};
+    \node [decision, below of=resolvent] (resolvent_how) {$A_\lambda x = 0 \Leftrightarrow x = 0 \ \ \forall y \in X: A_{\lambda}x = y,$ т.е $x = R_A(\lambda)y$};
+    \node [block, below of=resolvent_how] (resolvent_two) {$\lambda \in \rho(A)$};
+    \node [block, below of=spectrum] (spectrum_two) {$\lambda \in \sigma(A)$};
+    \node [cloud, below left of=spectrum_two, node distance=3cm] (pointer) {$Ker A_\lambda \neq \{0\}$};
+    \node [decision, below of=pointer] (pointer_how) {$\exists x \neq 0: A_\lambda x = 0$};
+    \node [block, below of=pointer_how] (pointer_two) {$\lambda \in \sigma_p(A)$};
+    \node [cloud, below right of=spectrum_two, node distance=5cm] (other) {$Ker A_\lambda = \{0\}, Im A_\lambda \neq X$};
+    \node [decision, below of=other, node distance=2cm] (other_how) {$A_\lambda x = 0 \Leftrightarrow x = 0 \ \ \exists y \in X: A_\lambda x \neq y \ \ \forall x \in X$};
+    \node [cloud, below left of=other_how, node distance=5cm] (continious) {$Ker A_\lambda = \{0\}, Im A_\lambda \neq X, [Im A_\lambda] = X$ или $\lambda \in \sigma(A), Ker A_\lambda = \{0\}, Ker (A_\lambda)^* = \{0\}$};
+    \node [block, below of=continious, node distance=2.5cm] (continious_two) {$\lambda \in \sigma_c(A)$};
+    \node [cloud, below right of=other_how, node distance=3cm] (residual) {$Ker A_\lambda = \{0\}, [Im A_\lambda] \neq X$ или $\lambda \in \sigma(A), Ker A_\lambda = \{0\}, Ker (A_\lambda)^* \neq \{0\}$};
+    \node [block, below of=residual, node distance=2.5cm] (residual_two) {$\lambda \in \sigma_r(A)$};
+    % Draw edges
+    \path [line] (complex) -- (resolvent);
+    \path [line] (complex) -- (spectrum);
+    \path [line] (resolvent) -- (resolvent_how);
+    \path [line] (resolvent_how) -- (resolvent_two);
+    \path [line] (spectrum) -- (spectrum_two);
+    \path [line] (spectrum_two) -- (pointer);
+    \path [line] (spectrum_two) -- (other);
+    \path [line] (pointer) -- (pointer_how);
+    \path [line] (pointer_how) -- (pointer_two);
+    \path [line] (other) -- (other_how);
+    \path [line] (other_how) -- (continious);
+    \path [line] (other_how) -- (residual);
+    \path [line] (continious) -- (continious_two);
+    \path [line] (residual) -- (residual_two);
+    
+\end{tikzpicture}
+
+\newpage
+\subsection*{Известные операторы}
+
+\end{document}
